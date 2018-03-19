@@ -1,0 +1,575 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueRegular';
+  src: url('../../fonts/HelveticaNeueRegular.woff') format('woff'), url('../../fonts/HelveticaNeueRegular.ttf') format('truetype');
+  src: url('../../fonts/HelveticaNeue-Regular_22623.eot');
+  src: url('../../fonts/HelveticaNeue-Regular_22623.woff2') format('woff2'), url('../../fonts/HelveticaNeue-Regular_22623.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+/*-- standart resets-*/
+html {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+html p {
+  margin: 0;
+  padding: 0;
+}
+html a {
+  text-decoration: none;
+}
+html img {
+  border: none;
+}
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+html h1 {
+  padding: 14px 0 24px;
+  font-size: 36px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+html h2 {
+  padding: 0;
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  color: #fff;
+}
+html strong {
+  font-weight: bold;
+}
+html .clr:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+html em {
+  font-style: italic;
+}
+html form,
+html menu,
+html iframe {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html ol,
+html ul,
+html dl,
+html li,
+html dt,
+html dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html * {
+  outline: none;
+}
+html .fl {
+  float: left;
+}
+html .fr {
+  float: right;
+}
+html .fn {
+  float: none;
+}
+html .tal {
+  text-align: left;
+}
+html .tac {
+  text-align: center;
+}
+html .tar {
+  text-align: right;
+}
+html .bold {
+  font-weight: bold;
+}
+html .italic {
+  font-style: italic;
+}
+html .flex_center {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+html a.standart_button {
+  display: inline-block;
+  max-height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+  padding: 10px 10px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+@font-face {
+  font-family: 'HelveticaNeueRegular';
+  src: url('../../fonts/HelveticaNeueRegular.woff') format('woff'), url('../../fonts/HelveticaNeueRegular.ttf') format('truetype');
+  src: url('../../fonts/HelveticaNeue-Regular_22623.eot');
+  src: url('../../fonts/HelveticaNeue-Regular_22623.woff2') format('woff2'), url('../../fonts/HelveticaNeue-Regular_22623.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+html a.standart_button:hover,
+html a.standart_button.active {
+  background: #000;
+  color: #fff;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+html a.standart_button span {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+html a.standart_button.active {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+html a.standart_button.active:hover {
+  background: #fff;
+  color: #000;
+}
+html a.standart_button.active:hover span {
+  color: #000;
+  position: relative;
+  top: -33px;
+  display: block;
+  margin-bottom: 15px;
+}
+/*-- standart resets-*/
+.form_wrapper {
+  background: #fff;
+  padding: 80px 80px 45px;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  top: -320px;
+}
+.form_wrapper h3 {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+@font-face {
+  font-family: 'HelveticaNeueRegular';
+  src: url('../../fonts/HelveticaNeueRegular.woff') format('woff'), url('../../fonts/HelveticaNeueRegular.ttf') format('truetype');
+  src: url('../../fonts/HelveticaNeue-Regular_22623.eot');
+  src: url('../../fonts/HelveticaNeue-Regular_22623.woff2') format('woff2'), url('../../fonts/HelveticaNeue-Regular_22623.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+.form_wrapper h3:after {
+  content: "";
+  width: 165px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  margin-left: -83px;
+  bottom: -30px;
+}
+.form_wrapper label {
+  width: 100%;
+}
+.form_wrapper label input {
+  width: 100%;
+  height: 40px;
+  text-indent: 15px;
+  margin-bottom: 30px;
+}
+.form_wrapper label input:focus {
+  border: 1px solid #58a9b8;
+}
+.form_wrapper label textarea {
+  width: 100%;
+  min-height: 100px;
+  text-indent: 15px;
+  margin-bottom: 30px;
+}
+.form_wrapper label textarea:focus {
+  border: 1px solid #58a9b8;
+}
+.form_wrapper label[for="select"] {
+  position: absolute;
+}
+.form_wrapper label .submin_button {
+  background: #fff;
+  color: #000;
+  height: 40px;
+  border-color: #000;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  margin-bottom: 0;
+}
+.form_wrapper label .submin_button:hover {
+  background: #000;
+  color: #fff;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.form_wrapper .select2.select2-container {
+  min-width: 100%;
+  width: 100%;
+}
+.form_wrapper .select2-container--default .select2-selection--single {
+  border-radius: 0;
+  height: 40px;
+}
+.form_wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 38px;
+}
+.form_wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 40px;
+}
+.form_wrapper .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form_wrapper .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-color: #58a9b8;
+}
+.modal.autorization .form_wrapper {
+  padding: 60px 80px 45px;
+}
+.modal.autorization .form_wrapper input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+.modal.autorization .form_wrapper input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+.modal.autorization .form_wrapper input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+.modal.autorization .form_wrapper input:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+.modal.autorization .form_wrapper input[type="password"] {
+  margin-bottom: 10px;
+}
+.modal.autorization .form_wrapper input[type="submit"] {
+  text-indent: 0;
+}
+.modal.autorization .form_wrapper h3 {
+  margin-bottom: 50px;
+}
+.modal.autorization .form_wrapper h3:after {
+  bottom: -22px;
+}
+.modal.autorization .form_wrapper p {
+  padding: 0;
+}
+.modal.autorization .form_wrapper p.text-center {
+  font-size: 18px;
+  margin-bottom: 45px;
+  padding: 0;
+}
+.modal.autorization .form_wrapper p a {
+  font-size: 14px;
+  color: #000;
+  padding-left: 0;
+}
+.modal.autorization .form_wrapper a.fb_login {
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  color: #000;
+}
+.modal.autorization .form_wrapper a.fb_login:before {
+  content: "";
+  background: url("../images/fb_befor.png") no-repeat;
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.modal.autorization .form_wrapper .border-top p {
+  border-top: 1px solid #000;
+  padding: 10px 0 0 ;
+}
+.modal.autorization .form_wrapper .border-top a {
+  color: #008fa4;
+}
+.modal.autorization .form_wrapper .descr p {
+  font-size: 12px;
+  color: #9c9b9b;
+}
+.modal.autorization .form_wrapper .descr p a {
+  font-size: 12px;
+  color: #000;
+}
+.modal .close {
+  opacity: 1;
+  color: #000;
+  float: none;
+  font-size: 40px;
+  font-weight: 100;
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  z-index: 2;
+}
+.modal .form_wrapper {
+  top: inherit;
+  border: none;
+}
+.modal .form_wrapper .radio input[type=radio].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.modal .form_wrapper .radio input[type=radio].css-checkbox + label.css-label {
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.modal .form_wrapper .radio input[type=radio].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px;
+}
+.modal .form_wrapper .radio label.css-label {
+  background-image: url(../images/radio.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modal.in .modal-dialog {
+  max-width: 550px;
+}
+.modal-content {
+  border-radius: 0;
+}
+body .modal .form_wrapper {
+  top: inherit;
+}
+body .form_wrapper {
+  padding: 60px 45px 45px;
+  border: none;
+}
+body .form_wrapper p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+body .form_wrapper .radio {
+  margin-bottom: 40px;
+}
+body .form_wrapper .radio ul {
+  display: flex;
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between;
+}
+body .form_wrapper .radio input[type=radio].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+body .form_wrapper .radio input[type=radio].css-checkbox + label.css-label {
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+body .form_wrapper .radio input[type=radio].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px;
+}
+body .form_wrapper .radio label.css-label {
+  background-image: url(../images/radio.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 15px;
+}
+body .form_wrapper input[type="submit"] {
+  max-width: 360px;
+  margin: 0 auto 20px;
+  display: block;
+}
+.left_side_color .select2-selection.select2-selection--single {
+  border-radius: 0;
+  width: 100%;
+  max-width: 170px;
+  background: transparent;
+  border: none;
+}
+.left_side_color .select2.select2-container.select2-container--default {
+  min-width: 170px;
+}
+.left_side_color .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.left_side_color .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), url('../../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-style: normal;
+}
+.soc {
+  position: fixed;
+  left: 70px;
+  top: 350px;
+  background: #000;
+  padding: 10px;
+}
+.soc li {
+  margin-bottom: 28px;
+}
+.soc li:last-child {
+  margin-bottom: 0;
+}
+.soc .insta {
+  background: url(../images/social_sprite.png) no-repeat 0 0;
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+.soc .fb {
+  background: url(../images/social_sprite.png) no-repeat -44px 0;
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+.soc .twit {
+  background: url(../images/social_sprite.png) no-repeat -88px 0;
+  width: 22px;
+  height: 19px;
+  display: block;
+}
